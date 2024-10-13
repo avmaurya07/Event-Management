@@ -11,8 +11,6 @@ lerna-debug.log*
 .env
 **/.env
 
-# Configuration files
-**config.js
 
 **/node_modules
 dist
