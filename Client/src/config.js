@@ -1,4 +1,4 @@
 // const BACKEND_HOST = "http://localhost:5000";
-const BACKEND_HOST = "https://event-management-9zzr.onrender.com";
+const BACKEND_HOST = "http://erpsystemserver.avmaurya07.tech:4000";
 
 export default BACKEND_HOST;
