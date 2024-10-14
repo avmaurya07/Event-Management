@@ -38,7 +38,7 @@ router.post("/", async (req, res) => {
       title: req.body.title,
       description: req.body.description,
       img: req.body.img,
-      dateOfEvent: req.body.dateOfEvent,
+      date: req.body.date,
       eventType: req.body.eventType,
       isPaidEvent: req.body.isPaidEvent,
       contributionAmount: req.body.contributionAmount,

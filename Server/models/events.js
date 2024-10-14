@@ -15,12 +15,4 @@ const EventSchema = new Schema({
   speakers: { type: [Object] },
 });
 
-// Pre-save hook to generate eventId
-EventSchema.pre('save', async function (next) {
-  if (!this.eventId) {
-    this.eventId = await generateUniqueEventId();
-  }
-  next();
-});
-
 module.exports = mongoose.model("event", EventSchema);
