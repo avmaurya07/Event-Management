@@ -8,10 +8,10 @@ const mongoose = require('./db'); // Import the db.js file to establish MongoDB 
 const app = express();
 
 const corsOptions = {
-    origin: 'http://localhost:5173'
+    origin: 'https://event-management-gamma-one.vercel.app/'
 };
-app.use(cors());
-// app.use(cors(corsOptions));
+// app.use(cors());
+app.use(cors(corsOptions));
 app.use(bodyParser.json());
 app.get('/', (req, res) => {
     res.send(`<h1>You are on Event Management Server...</h1>`);
